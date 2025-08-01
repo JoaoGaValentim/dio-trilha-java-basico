@@ -7,11 +7,14 @@ public class App {
         final int year = OffsetDateTime.now().getYear();
 
         System.out.println("Em que ano você nasceu? ");
+        final String name = sc.nextLine();
+
+        System.out.println("Em que ano você nasceu? ");
         final int birthYear = sc.nextInt();
 
         final int age = birthYear >= year ? 0 : year - birthYear;
 
-        System.out.printf("Você nasceu em %s e tem %s ano(s) em %s.\n", birthYear, age, year);
+        System.out.printf("%s nasceu em %s e tem %s ano(s) em %s.\n", name, birthYear, age, year);
         sc.close();
     }
 }
