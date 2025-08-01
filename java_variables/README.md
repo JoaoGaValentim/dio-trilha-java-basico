@@ -1,18 +1,37 @@
-## Getting Started
+# Java Variables
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This project demonstrates the basics of variables in Java.
 
 ## Folder Structure
 
-The workspace contains two folders by default, where:
+```
+java_variables/
+├── README.md
+├── src/
+│   └── Main.java
+```
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Topics Covered
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- Declaring variables
+- Variable types (int, double, String, etc.)
+- Naming conventions
+- Initialization and assignment
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Getting Started
 
-## Dependency Management
+1. Clone the repository.
+2. Open the project in your IDE.
+3. Run `Main.java` to see examples of variable usage.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Example
+
+```java
+int age = 25;
+double salary = 3500.50;
+String name = "João";
+```
+
+## License
+
+This project is licensed under the MIT License.
