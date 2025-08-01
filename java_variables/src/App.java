@@ -1,16 +1,17 @@
 import java.time.OffsetDateTime;
+import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        int age = 24;
-        double salary = 1599.5;
-        double salaryAdjustPercent = 0.5;
-        double newSalary = salary + (salary * salaryAdjustPercent);
-        // float temperature = 34.2F; // Java uses F to recognize float
-        // long distanceInYearsLight = 1222222L; // long use L
-        age = (OffsetDateTime.now().getYear() + 1) - 2001;
-        final float PI = 3.141516F;
+        final Scanner sc = new Scanner(System.in);
+        final int year = OffsetDateTime.now().getYear();
 
-        System.err.printf("Idade %s e salário %.2f o valor de PI %.11f.\n", age, newSalary, PI);
+        System.out.println("Em que ano você nasceu? ");
+        final int birthYear = sc.nextInt();
+
+        final int age = birthYear >= year ? 0 : year - birthYear;
+
+        System.out.printf("Você nasceu em %s e tem %s ano(s) em %s.\n", birthYear, age, year);
+        sc.close();
     }
 }
