@@ -6,7 +6,7 @@ public class App {
         final Scanner sc = new Scanner(System.in);
         final int year = OffsetDateTime.now().getYear();
 
-        System.out.println("Em que ano você nasceu? ");
+        System.out.println("Qual o seu nome? ");
         final String name = sc.nextLine();
 
         System.out.println("Em que ano você nasceu? ");
