@@ -38,4 +38,30 @@ public class Mathematic {
         }
         return value;
     }
+
+    /**
+     * <p>
+     * This method execute a <strong>sum</strong>
+     * </p>
+     * 
+     * <p>
+     * For example:
+     * </p>
+     * 
+     * <code>
+     * Mathematic.sum(2, 8)
+     * </code>
+     * 
+     * @param values
+     * @see #sum(double ...values)
+     */
+    public static double sum(double... values) {
+        double result = 0;
+
+        for (double value : values) {
+            result += value;
+        }
+
+        return result;
+    }
 }
