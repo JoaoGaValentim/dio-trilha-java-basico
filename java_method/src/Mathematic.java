@@ -64,4 +64,32 @@ public class Mathematic {
 
         return result;
     }
+
+    /**
+     * <p>
+     * This method execute a <strong>average</strong>
+     * </p>
+     * 
+     * <p>
+     * For example:
+     * </p>
+     * 
+     * <code>
+     * Mathematic.average(10, 8, 10)
+     * </code>
+     * 
+     * @param values
+     * @see #average(double ...values)
+     */
+    public static double average(double... values) {
+        double result = 0;
+
+        for (double value : values) {
+            result += value;
+        }
+
+        result /= values.length;
+
+        return result;
+    }
 }
